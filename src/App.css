@@ -1,0 +1,65 @@
+.d-flex.justify-content-center.align-items-center.vh-100 > div {
+  flex-direction: column !important;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.d-flex.justify-content-center.align-items-center.vh-100 img {
+  width: 100% !important;
+  max-width: 350px;
+}
+
+/* CARDS (ya bastante responsive por bootstrap, pero mejoramos spacing) */
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+/* SECCIÓN PRECIO */
+.text-center img {
+  width: 100%;
+  max-width: 300px;
+}
+
+.text-center .btn {
+  width: 100% !important;
+  max-width: 200px;
+}
+
+#alert {
+    position: fixed;
+    z-index: 2;
+}
+
+@keyframes animacion {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* 💻 DESKTOP */
+@media (min-width: 768px) {
+
+  /* HERO vuelve a fila */
+  .d-flex.justify-content-center.align-items-center.vh-100 > div {
+    flex-direction: row !important;
+    text-align: left;
+    gap: 50px;
+  }
+
+  .d-flex.justify-content-center.align-items-center.vh-100 img {
+    max-width: 600px;
+  }
+
+  /* BOTÓN FINAL */
+  .text-center .btn {
+    width: 25% !important;
+  }
+}
