@@ -23,6 +23,9 @@ function App() {
        comprar();
        fetch('https://api-beta-eight-97.vercel.app/api/data', {
          method: "POST",
+          headers: {
+          'Content-Type': 'application/json'
+        },
          body: JSON.stringify({ username: "Pedido" }),
         }
        )
